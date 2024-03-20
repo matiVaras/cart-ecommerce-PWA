@@ -1,0 +1,22 @@
+{
+  "name": "Margarita Margarol",
+  "short_name": "MM",
+  "description": "Esta es una tienda de ropa y accesorios que ofrece una amplia variedad de prendas de vestir y complementos para hombres y mujeres",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "./assets/icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "scope": "/",
+  "lang": "es",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "categories": ["shopping", "fashion"]
+}

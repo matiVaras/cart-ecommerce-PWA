@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo.png">
+    <link rel="manifest" href="manifest.json" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="styles/estilos.css">
+    <title>Tiendita de Ropa y accesorios</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg  navbar-light bg-light" style="border-bottom: solid lightgrey 1px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="color: #000;">
+                    <img src="assets/logo.png" alt="Cinnamon roll logo" width="32"
+                        class="d-inline-block align-text-top fw-bold">
+                    Margarita Margarol
+                </a>
+
+                <div>
+                    <button id="botonCarrito" class="btn btn-success colorMarca fw-bold">Ver carrito 🛒</button>
+                </div>
+            </div>
+        </nav>
+
+        <div id="avisoCarrito"></div>
+        <h1 class="mt-4 mb-4 text-center">Ropita & accesorios</h1>
+    </header>
+
+    <main>
+        <!-- Capturar elementos de js -->
+        <div id="general" class="row gap m-auto"></div>
+
+        <div class="paginacion row justify-content-center">
+            <button type="button" id="btnPosterior" class="btn btn-warning text-center fw-bold">Cargar mas productos</button>
+        </div>
+    </main>
+
+    <footer class="mt-5 text-center container-footer">
+        <div class="piePagina">
+            <h5 class="mb-2"></h5>
+            <br>
+        </div>
+        <div class="piePagina">
+            <h5 class="mb-2">Local</h5>
+            <p>Paraguay 4387, Palermo, C1425 CABA, Argentina</p>
+        </div>
+        <div class="piePagina">
+            <h5 class="mb-2">Contacto</h5>
+            <p><a href="tel:112251465">+54112251465</a></p>
+        </div>
+        <div>
+            <a href="#" class="fs-5 nav-link"></a>
+        </div>
+        <div>
+            <p class="text-center pt-4 fs-6">Matias A. Varas - PWA – Final</p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

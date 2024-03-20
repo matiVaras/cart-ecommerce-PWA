@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  color: var(--button-text-color);
+}
+a:hover {
+  color: var(--button-bg-color);
+}
+
+:root {
+  --main-bg-color: #fff; /* Fondo principal en blanco */
+  --main-text-color: #333; /* Color principal de texto */
+  --brand-color: #3498db; /* Color de marca principal */
+  --button-bg-color: #e74c3c; /* Color de fondo de botones */
+  --button-text-color: #fff; /* Color de texto de botones */
+  --card-bg-color: #ecf0f1; /* Color de fondo de cards */
+  --link-color: #e74c3c; /* Color de enlaces */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+.imgModal {
+  width: 400px;
+}
+
+.colorMarca {
+  background-color: var(--brand-color);
+  border: none;
+}
+
+.colorLink {
+  color: var(--link-color) !important;
+}
+
+.carousel img {
+  max-height: 1000px;
+  min-height: 200px;
+}
+
+.carousel h2 {
+  text-shadow: 1px 1px 1px #000;
+  font-size: 16px;
+}
+
+nav {
+  margin-bottom: -1px;
+  border: none;
+  margin-top: 0;
+  background-color: #2c2c2c4f !important;
+}
+
+.iconosServicios img {
+  height: 60px;
+  width: 60px;
+}
+
+h1, .navbar-brand, h3 {
+  color: var(--brand-color);
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: var(--button-bg-color);
+}
+
+iframe {
+  height: 400px;
+}
+
+.pastillas {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+footer .piePagina {
+  max-width: 200px;
+  color: white;
+}
+
+footer > div:nth-child(5) {
+  grid-column: 1/5;
+  width: 100%;
+  background-color: var(--brand-color);
+  color: white;
+}
+
+.container-footer {
+  background-color: var(--brand-color);
+}
+
+footer h5 {
+  color: #fff;
+}
+
+footer {
+  display: block;
+  margin: auto;
+}
+
+footer > div {
+  margin: auto;
+  margin-top: 25px;
+  border-bottom: 1px solid rgba(104, 104, 104, 0.573);
+}
+
+.d-none {
+  display: flow-root !important;
+}
+
+/* breakpoints */
+@media screen and (min-width: 576px) {
+  h3 {
+      font-size: 1.5em;
+  }
+  footer > div {
+      border: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .iconosServicios {
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+  }
+  footer {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-template-rows: repeat(2, auto);
+  }
+  .carousel h2 {
+      font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .border-bottom {
+      border-bottom: none !important;
+  }
+  .pastillas {
+      display: grid;
+      grid-template-columns: 50% 50%;
+  }
+  .iconosServicios {
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+  }
+}
+
+.card {
+  max-height: 600px;
+  background-color: var(--card-bg-color);
+  text-align: center;
+}
+
+.card-img-top {
+  max-height: 300px;
+}
+
+.paginacion {
+  display: flex;
+}
